@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello world</title>
+  <link rel="icon" type="image/jpg" href="./favicon.jpg">
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="search">
+      <input 
+        type="text" 
+        placeholder="Ingresa nombre de la ciudad" 
+        spellcheck="false" 
+        autocomplete="false"
+        id="input-city">
+        <button onclick="getWeather()">
+          <img src="./imagenes/buscar.png" alt="" />
+        </button>
+    </div>
+    <div class="weather-info">
+    </div>
+  </div>
+</body>
+
+</html>
