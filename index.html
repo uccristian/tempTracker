@@ -7,7 +7,6 @@
   <title>Hello world</title>
   <link rel="icon" type="image/jpg" href="./favicon.jpg">
   <link rel="stylesheet" href="./styles.css" />
-  <script src="./app.js"></script>
 </head>
 
 <body>
@@ -19,13 +18,34 @@
         spellcheck="false" 
         autocomplete="false"
         id="input-city">
-        <button onclick="getWeather()">
+        <button id="btn-search">
           <img src="./imagenes/buscar.png" alt="" />
         </button>
     </div>
     <div class="weather-info">
+      <p class="weather-text">Parcialmente nublado</p>
+      <img src="./imagenes/clima-ejemplo.webp" class="weather-icon" alt="weather-icono" />
+      <h1 class="temp">22c</h1>
+      <h2 class="city">Huancayo</h2>
+      <div class="details">
+        <div class="col">
+          <img src="./imagenes/humedad.png" alt="humedad" />
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humedad</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="./imagenes/viento.png" alt="viento" />
+          <div>
+            <p class="wind">10km/h</p>
+            <p>Viento</p>
+        </div>
+      </div>
     </div>
   </div>
+  <script type="module" src="./app.js"></script>
 </body>
 
 </html>
